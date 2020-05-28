@@ -755,7 +755,7 @@ if Controls then
 		fnSend("SOURCE", vivitek.requestedSource)
 		vivitek.requestedSource = nil
 	end
-
+--[[
 	function switchSource(s)
 		vivitek.requestedSource = s
 		if Controls.PowerState.Boolean ~= true then
@@ -769,7 +769,7 @@ if Controls then
 			fnSend("SOURCE", vivitek.requestedSource)
 		end
 	end
-
+]]--
 	-- Setup Event Handlers
 	for k, v in pairs(Controls) do
 		-- Setup Event Handler (IP Address Pin)
@@ -888,8 +888,9 @@ if Controls then
 			Controls.PowerState.Color = "orange"
 		else
 			debug("Error - Unknown Power state")
-			Controls.PowerState.Color = "orange"
 			Controls.PowerState.Boolean = false
+			Controls.PowerState.String = "Power State Unknown"
+			Controls.PowerState.Color = "orange"
 		end
 	end
 
