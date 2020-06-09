@@ -5,7 +5,7 @@
 PluginInfo = {
 	Name = "Vivitek~DU6675/DW6655/DX6635 Projector", -- The tilde here indicates folder structure in the Shematic Elements pane
 	Version = "0.0.1",
-	Id = "SoloWorks.Vivitek.DU6675-DW6655-DX6635Projector.0.0.1", -- show this is just a unique id. Show some commented out 'fun' unique ids
+	Id = "SoloWorks.Vivitek.DU6675-DW6655-DX6635Projector.0.0.1", -- show this is just a unique id.
 	Description = "Control for Vivitek DU6675/DW6655/DX6635 projectors",
 	ShowDebug = true,
 	Author = "Solo Works London"
